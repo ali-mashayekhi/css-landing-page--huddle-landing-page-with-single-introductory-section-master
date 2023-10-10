@@ -1,0 +1,266 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights:
+Default: 400
+
+- Line heights:
+Default: 1
+
+--- 02 COLORS
+
+- Primary: 
+#674baf
+#e882e8
+-Tints:
+#f0edf7
+-Shades:
+-Accents:
+-Gray: 
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITE SPACE
+
+- Spaceing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/**************************/
+/* GLOBAL RESETTING */
+/**************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+}
+
+/**************************/
+/* INTRODUCTORY SECTION */
+/**************************/
+
+.section-introductory {
+  /* background-color: #674baf; */
+  /* background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  padding: 3.2rem 0;
+  position: relative;
+}
+
+.section-introductory::before {
+  content: "";
+  background-color: #674baf;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(./images/bg-mobile.svg);
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.introductory {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* Introductory Header */
+.introductory-header {
+  margin-bottom: 6.4rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+/* Introductory Body */
+.illustration-img {
+  width: 100%;
+  margin-bottom: 6.4rem;
+}
+
+.introductory-body {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.introductory-description {
+  font-size: 1.6rem;
+  color: #f0edf7;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+/* Cta button */
+.btn {
+  color: #674baf;
+  background-color: #fff;
+  font-size: 1.4rem;
+  border: none;
+  height: 4rem;
+  width: 20rem;
+  border-radius: 100px;
+  margin-bottom: 6.4rem;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #e882e8;
+}
+
+/* Social Logos */
+.social-logos {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.social-box:link,
+.social-box:visited {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.social-box:hover,
+.social-box:active {
+  border: 1px solid #e882e8;
+}
+
+.social-icon {
+  width: 50%;
+  height: 50%;
+  fill: #fff;
+}
+
+.social-box:hover .social-icon,
+.social-box:active .social-icon {
+  fill: #e882e8;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.attribution {
+  color: #000;
+  margin-top: 10rem;
+  padding: 3rem 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #305296;
+}
+
+/**************************/
+/* DESKTOP DESIGN */
+/**************************/
+
+@media (min-width: 37.5rem) {
+  .section-introductory {
+    height: 100vh;
+    /* background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain; */
+    padding: 4.8rem 0 3.2rem 0;
+  }
+
+  .section-introductory::before {
+    content: "";
+    background-color: #674baf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .introductory {
+    max-width: 135rem;
+    padding: 0 3.2rem;
+  }
+
+  .introductory-header {
+    margin-bottom: 8rem;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .illustration-img {
+    margin-bottom: 0;
+  }
+
+  .introductory-body {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 9.6rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .introductory-description {
+    text-align: start;
+  }
+  .main-title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+  }
+  .introductory-description {
+    letter-spacing: 0.8px;
+  }
+  .btn {
+    height: 5rem;
+  }
+
+  .social-logos {
+    justify-content: flex-end;
+  }
+}
+
+/* Resize thing on the screen like solution  */
