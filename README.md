@@ -13,7 +13,7 @@ Main branch is my own solution for this project and course branch is followed by
 ![](design/screenshot1.png)
 ![](design/screenshot2.png)
 
-- [Live-Demo](https://ali-landing-pages.netlify.app/huddle-landing-page-with-single-introductory-section-master/)
+- [Live-Demo](https://ali-huddle-landing-page.netlify.app/)
 - [Solution URL](https://www.frontendmentor.io/solutions/huddlelandingpagewithsingleintroductorysectionmaster-B0ea1Ryr57)
 
 ### Built with
