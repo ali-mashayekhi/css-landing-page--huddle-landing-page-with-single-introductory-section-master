@@ -1,14 +1,12 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
-Food ordering app that you can add food to your shop cart and manage your orders from there.
+Hero section with a cta button.
 
 ## Installation
 
 This project is made by only html and css so you just need a browser to run it.
 
 ## Overview
-
-Main branch is my own solution for this project and course branch is followed by tuturial way to do the project.
 
 ![](design/screenshot1.png)
 ![](design/screenshot2.png)
